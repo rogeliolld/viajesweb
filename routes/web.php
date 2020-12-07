@@ -18,7 +18,7 @@ Route::get('/', 'HomeController@principal');
 Route::get('/admin', function () {
     return view('home');
 });
-Auth::routes(['register'=>false, 'reset'=>false]);
+Auth::routes(['reset'=>false]);
 Route::resource('/admin/paginas', 'PaginasController')->middleware('auth');
 Route::resource('/admin/planes', 'PlanesController')->middleware('auth');
 Route::resource('/admin/slider', 'SliderController')->middleware('auth');

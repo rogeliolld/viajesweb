@@ -16,19 +16,19 @@
                     
                     <div class="row">
                     <div class="col-lg-2">
-                        <a class="btn btn-outline-primary">Paginas</a>
+                        <a class="btn btn-outline-primary" href="{{ route('paginas.index') }}">Paginas</a>
                     </div>
                     <div class="col-lg-2">
-                        <a class="btn btn-outline-success">Planes</a>
+                        <a class="btn btn-outline-success" href="{{ route('planes.index') }}">Planes</a>
                     </div>
                     <div class="col-lg-2">
-                        <a class="btn btn-outline-primary">Slider</a>
+                        <a class="btn btn-outline-primary" href="{{ route('slider.index') }}">Slider</a>
                     </div>
                     <div class="col-lg-2">
-                        <a class="btn btn-outline-success">Sitios</a>
+                        <a class="btn btn-outline-success" href="{{ route('destinos.index') }}">Sitios</a>
                     </div>
                     <div class="col-lg-3">
-                        <a class="btn btn-outline-primary">Galeria Sitios</a>
+                        <a class="btn btn-outline-primary" href="{{ route('galeriadestinos.index') }}">Galeria Sitios</a>
                     </div>
                     
                 </div>

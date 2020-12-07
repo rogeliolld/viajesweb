@@ -1,0 +1,357 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Segoeui";
+  src: url("../assets/../assets/fonts/seguisb/segoeui/segoeui.eot");
+  src: local("☺"), url("../assets/fonts/segoeui/segoeui.woff") format("woff"), url("../assets/fonts/segoeui/segoeui.ttf") format("truetype"), url("../assets/fonts/segoeui/segoeui.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Segoeuib";
+  src: url("../assets/fonts/segoeuib/segoeuib.eot");
+  src: local("☺"), url("../assets/fonts/segoeuib/segoeuib.woff") format("woff"), url("../assets/fonts/segoeuib/segoeuib.ttf") format("truetype"), url("../assets/fonts/segoeuib/segoeuib.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Seguisb";
+  src: url("../assets/fonts/seguisb/seguisb.eot");
+  src: local("☺"), url("../assets/fonts/seguisb/seguisb.woff") format("woff"), url("../assets/fonts/seguisb/seguisb.ttf") format("truetype"), url("../assets/fonts/seguisb/seguisb.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+#mainNav {
+  font-family: "Segoeui";
+  font-weight: 200;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
+  color: #707070;
+  border-bottom: 1px solid #F0B24A;
+  border-radius: 0px;
+  background-color: transparent;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link.active:hover, #mainNav .navbar-nav li.nav-item a.nav-link.active:active, #mainNav .navbar-nav li.nav-item a.nav-link.active:focus {
+  color: #707070;
+  border-bottom: 1px solid #F0B24A;
+  border-radius: 0px;
+  background-color: transparent;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link {
+  color: #606060;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:focus, #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+  color: #F0B24A;
+}
+#mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+  color: #707070;
+}
+
+#mainNav.navbar-shrink {
+  border-bottom: 2px solid #00000029;
+}
+button.bg-primary:hover{
+
+  background-color: #F0B24A !important;
+
+}
+button.bg-primary:focus{
+
+  background-color: #F0B24A !important;
+
+}
+
+/*Estilos Globales*/
+body {
+  font-family: "Segoeui";
+  font-weight: normal;
+}
+
+.timeline-title {
+  color: #fff;
+  font-family: "Segoeuib";
+  font-weight: normal;
+}
+
+.titulo {
+  color: #707070;
+  font-family: "Seguisb";
+  font-weight: normal;
+}
+
+.subtitulo {
+  color: #F1B95B;
+  font-family: "Segoeuib";
+  font-weight: normal;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #707070;
+}
+
+.bottom-active {
+  color: #F0B24A !important;
+}
+
+.titulo-naranja {
+  color: #F0B24A;
+  font-family: "Segoeuib";
+}
+
+span.barra {
+  position: relative;
+  z-index: 3;
+  display: block;
+  color: #707070;
+}
+
+span.barra:before {
+  position: absolute;
+  height: 80px;
+  width: 3px;
+  background: #F0B24A;
+  content: "";
+  left: 50%;
+  bottom: 100%;
+}
+
+.bg-primary {
+  background-color: #F0B24A !important;
+}
+
+.social-bar {
+  position: fixed;
+  right: 2%;
+  top: 22%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
+.social-bar::after, .social-bar::before {
+  position: relative;
+  height: 150px;
+  width: 3px;
+  background: #F0B24A;
+  content: "";
+  right: 35%;
+  bottom: 100%;
+}
+
+.icon {
+  color: #606060;
+  text-decoration: none;
+  padding: 0.7rem;
+  display: flex;
+  transition: all 0.5s;
+  text-shadow: 0px 1px 6px #fff;
+}
+.icon:hover {
+  color: #F0B24A;
+}
+
+/*Estilos por secciones*/
+.destinos .titulos .leyenda,
+.planes .titulos .leyenda,
+.contacto .titulos .leyenda {
+  font-family: "Seguisb";
+  color: #707070;
+  font-weight: normal;
+}
+.destinos .titulos h3.titulo,
+.planes .titulos h3.titulo,
+.contacto .titulos h3.titulo {
+  color: #707070;
+  font-family: "Segoeuib";
+  font-weight: normal;
+}
+.destinos .titulos h3.subtitulo,
+.planes .titulos h3.subtitulo,
+.contacto .titulos h3.subtitulo {
+  color: #F1B95B;
+  font-family: "Segoeuib";
+  font-weight: normal;
+}
+.destinos h5.icono,
+.planes h5.icono,
+.contacto h5.icono {
+  font-size: 3.5rem;
+  text-align: center;
+}
+.destinos p.card-text,
+.planes p.card-text,
+.contacto p.card-text {
+  text-align: center;
+  color: #707070;
+  padding: 10px 20px;
+}
+.destinos .card,
+.planes .card,
+.contacto .card {
+  border: 0px;
+}
+
+/*Galeria Destinos*/
+.galeria-destino .item img {
+  filter: grayscale(90%);
+}
+.galeria-destino .item .img-text {
+  color: #F0B24A;
+  font-family: "Seguisb";
+}
+.galeria-destino .item:hover .img-text {
+  color: #fff;
+  font-size: 1.4rem;
+  text-shadow: 1px 1px 2px black;
+  top: 200px;
+}
+.galeria-destino .item:hover img {
+  filter: grayscale(0%);
+}
+.galeria-destino .item:hover .col-4 {
+  max-width: 80%;
+}
+.galeria-destino .img-text {
+  position: absolute;
+  top: 100px;
+  left: 30px;
+  width: 100%;
+  margin: 0 auto;
+  height: 50px;
+  z-index: 1;
+  overflow-wrap: break-word;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-shadow: 1px 1px 2px white;
+}
+.galeria-destino .img-text::before {
+  content: "|";
+}
+.galeria-destino .img-text::after {
+  content: "|";
+}
+@media (min-width: 767px) and (max-width: 1023px) {
+  .galeria-destino .img-text {
+    font-size: 3.8rem;
+  }
+}
+@media (min-width: 1023px) and (max-width: 1360px) {
+  .galeria-destino .img-text {
+    font-size: 3.3rem;
+  }
+}
+@media (min-width: 1360px) and (max-width: 1920px) {
+  .galeria-destino .img-text {
+    font-size: 3.2rem;
+  }
+}
+.galeria-destino .filter-button {
+  border: none;
+  color: #707070;
+  border-radius: 0px;
+}
+.galeria-destino .filter-button:hover {
+  background-color: transparent;
+  border: 0px;
+  color: #F0B24A;
+}
+
+/*Estilos seccion planes*/
+.planes {
+  color: #707070;
+}
+.planes .tipos-planes img {
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px #00000094;
+}
+.planes .tipos-planes p {
+  font-size: 1.1rem;
+}
+.planes .mt-6 {
+  margin-top: 6rem;
+}
+
+/*Estilos seccion contacto*/
+.contacto .floating-label-form-group input {
+  border: 1px solid #707070;
+  border-radius: 16px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+}
+.contacto .border-right {
+  border-right: 2px solid #F0B24A !important;
+}
+.contacto .btn-primary {
+  background-color: transparent;
+  color: #606060;
+  border-color: #F0B24A;
+}
+.contacto .btn-primary:hover {
+  background-color: #F0B24A;
+  color: #fff;
+}
+.contacto .btn-primary:focus {
+  box-shadow: none;
+}
+
+/*Estilos seccion footer*/
+.footer {
+  background-color: #fff;
+}
+.footer .img-background {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 6rem;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+@media (min-width: 360px) and (max-width: 767px) {
+  .footer .img-background {
+    padding: 3rem;
+  }
+}
+.footer h4 {
+  color: #707070;
+}
+.footer h2 {
+  text-shadow: 0px 0px 4px black;
+}
+.footer .icono {
+  color: #606060;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  font-size: 1.3rem;
+}
+.footer .icono:hover {
+  color: #F0B24A;
+}
+.footer p {
+  font-family: Cairo;
+  font-weight: 400;
+}
+.footer .titulo {
+  font-family: Cairo;
+  font-weight: 600;
+}
+.footer ul {
+  list-style: none;
+  text-align: left;
+}
+.footer ul li a {
+  color: #707070;
+  font-size: 1.2rem;
+}
+.footer ul li::before {
+  content: "•";
+  color: #F0B24A;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

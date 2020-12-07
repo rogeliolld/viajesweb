@@ -1,0 +1,296 @@
+@import "font-family";
+@import "color";
+@import "font-size";
+@import "nav";
+
+$breakpoint-xs: 360px;
+$breakpoint-sm: 767px;
+$breakpoint-md: 1023px;
+$breakpoint-lg: 1360px;
+$breakpoint-xl: 1920px;
+/*Estilos Globales*/
+body{
+  font-family: $segoeui;
+  font-weight: normal;
+}
+
+.timeline-title{
+  color: $blanco;
+  font-family: $segoeuiBold;
+  font-weight: normal;
+}
+.titulo {
+  color: $gris;
+  font-family: $seguiSB;
+  font-weight: normal;
+}
+.subtitulo {
+  color: $naranja-light;
+  font-family: $segoeuiBold;
+  font-weight: normal;
+}
+p {
+  font-size: 1.1rem;
+  color: $gris;
+}
+.bottom-active{
+  color: $naranja-bold !important;
+}
+.titulo-naranja {
+  color: $naranja-bold;
+  font-family: $segoeuiBold;
+}
+span.barra {
+  position: relative;
+  z-index: 3;
+  display: block;
+  color: $gris;
+}
+span.barra:before {
+  position: absolute;
+  height: 80px;
+  width: 3px;
+  background: $naranja-bold;
+  content: "";
+  left: 50%;
+  bottom: 100%;
+}
+.bg-primary {
+  background-color: $naranja-bold !important;
+}
+
+.social-bar {
+	position: fixed;
+	right: 2%;
+	top: 22%;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+  z-index: 100;
+  &::after, &::before{
+    position: relative;
+    height: 150px;
+    width: 3px;
+    background: $naranja-bold;
+    content: "";
+    right: 35%;
+    bottom: 100%;
+  }
+}
+
+.icon {
+	color: $gris-oscuro;
+	text-decoration: none;
+	padding: .7rem;
+	display: flex;
+  transition: all .5s;
+  text-shadow: 0px 1px 6px $blanco;
+  &:hover{
+    color: $naranja-bold;
+  }
+}
+
+/*Estilos por secciones*/
+.destinos,
+.planes,
+.contacto {
+  .titulos {
+    .leyenda{
+      font-family: $seguiSB;
+      color: $gris;
+      font-weight: normal;
+    }
+    h3.titulo {
+      color: $gris;
+      font-family: $segoeuiBold;
+      font-weight: normal;
+    }
+    h3.subtitulo {
+      color: $naranja-light;
+      font-family: $segoeuiBold;
+      font-weight: normal;
+    }
+  }
+  h5.icono {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+  p.card-text {
+    text-align: center;
+    color: $gris;
+    padding: 10px 20px;
+  }
+  .card {
+    border: 0px;
+  }
+}
+
+/*Galeria Destinos*/
+.galeria-destino {
+  .item {
+    img {
+      filter: grayscale(90%);
+    }
+    .img-text {
+      color: $naranja-bold;
+      font-family: $seguiSB;
+    }
+    &:hover {
+      .img-text {
+        color: $blanco;
+        font-size: 1.4rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+        top: 200px;
+      }
+      img {
+        filter: grayscale(0%);
+      }
+      .col-4 {
+        max-width: 80%;
+      }
+    }
+  }
+
+  .img-text {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+    width: 100%;
+    margin: 0 auto;
+    height: 50px;
+    z-index: 1;
+    overflow-wrap: break-word;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 1);
+    &::before {
+      content: "|";
+    }
+    &::after {
+      content: "|";
+    }
+    @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { 
+      font-size: 3.8rem;
+     }
+    @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg){
+      font-size: 3.3rem;
+    }
+    @media (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl){
+      font-size: 3.2rem;
+    }
+  }
+
+  .filter-button {
+    border: none;
+    color: $gris;
+    border-radius: 0px;
+    &:hover {
+      background-color: transparent;
+      border: 0px;
+      color: $naranja-bold;
+    }
+  }
+}
+
+/*Estilos seccion planes*/
+.planes {
+  color: $gris;
+  .tipos-planes {
+    img {
+      border-radius: 10px;
+      box-shadow: 4px 4px 6px #00000094;
+    }
+    p {
+      font-size: 1.1rem;
+    }
+  }
+  .mt-6 {
+    margin-top: 6rem;
+  }
+}
+
+/*Estilos seccion contacto*/
+.contacto {
+  .floating-label-form-group input {
+    border: 1px solid #707070;
+    border-radius: 16px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+  }
+  .border-right {
+    border-right: 2px solid $naranja-bold !important;
+  }
+  .btn-primary{
+    background-color: transparent;
+    color: $gris-oscuro;
+    border-color: $naranja-bold;
+    &:hover{
+      background-color: $naranja-bold;
+      color:$blanco;
+    }
+    &:focus{
+      box-shadow: none;
+    }
+  }
+}
+
+/*Estilos seccion footer*/
+.footer {
+  background-color: $blanco;
+  .img-background {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 6rem;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    @media (min-width: $breakpoint-xs) and (max-width: $breakpoint-sm) { 
+      padding: 3rem;
+     }
+  }
+  h4{
+    color: $gris;
+  }
+  h2{
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 1);
+  }
+  .icono{
+    color: $gris-oscuro;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 1.3rem;
+    &:hover{
+      color: $naranja-bold;
+    }
+  }
+  p{
+    font-family: Cairo;
+    font-weight: 400;
+  }
+  .titulo{
+    font-family: Cairo;
+    font-weight: 600;
+  }
+  ul {
+    list-style: none; 
+    text-align: left;
+    li{
+      a{
+        color: $gris;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  ul li::before {
+    content: "\2022";  
+    color: $naranja-bold; 
+    font-weight: bold; 
+    display: inline-block; 
+    width: 1em; 
+    margin-left: -1em;
+  }
+}

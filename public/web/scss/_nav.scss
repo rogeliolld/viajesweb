@@ -1,0 +1,32 @@
+#mainNav{
+    font-family: $segoeui;
+    font-weight: 200;
+}
+#mainNav .navbar-nav li.nav-item {
+    a.nav-link.active {
+        color: $gris;
+        border-bottom: 1px solid $naranja-bold;
+        border-radius: 0px;
+        background-color: transparent;
+      &:hover, &:active, &:focus {
+        color: $gris;
+        border-bottom: 1px solid $naranja-bold;
+        border-radius: 0px;
+        background-color: transparent;
+      }
+    }
+
+    a.nav-link{
+        color: $gris-oscuro;
+        &:focus,&:hover {
+            color: $naranja-bold;
+        }
+        &:active,&:focus{
+            color: $gris;
+        }
+    }
+}
+
+#mainNav.navbar-shrink{
+    border-bottom: 2px solid $gris-sombra;
+}
